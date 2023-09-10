@@ -32,3 +32,52 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+
+/* Style the horizontal navigation bar */
+.horizontal-nav {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.horizontal-nav li {
+    margin: 0 10px;
+    padding: 10px;
+    border-right: 1px solid #007BFF;
+    display: inline-block;
+    position: relative; /* Add this to make the dropdown work */
+}
+
+/* Style the dropdown menu items */
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Position below the parent li */
+    left: 0;
+    background-color: #007BFF;
+    display: none; /* Hide the dropdown menu by default */
+    list-style-type: none;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #007BFF;
+}
+
+/* Show the dropdown menu when hovering over the parent li */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Style the links in the dropdown menu */
+.dropdown-menu a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.dropdown-menu a:hover {
+    text-decoration: underline;
+   }
