@@ -2,3 +2,29 @@ h1 {
     color: #E53935; /* You can replace #FF5733 with your chosen hex color code */
     font-family: 'Roboto', sans-serif;
 }
+/* main.css */
+
+/* Style the first letter of the first paragraph */
+main p:first-of-type::first-letter {
+    font-size: 150%; /* Change the font size of the first letter */
+    color: #E53935; /* Change the color of the first letter */
+}
+
+/* Indent the first line of all other paragraphs after the first */
+main p:not(:first-of-type) {
+    text-indent: 1.5em; /* Adjust the indentation value as needed */
+}
+
+.reflection {
+    /* Add any additional styling for reflection paragraphs here */
+    /* For example, if you want to remove the border and add padding: */
+    border: none;
+    padding: 0;
+}
+
+.reflection-p:not(:first-of-type) {
+    text-indent: 1.5em; /* Adjust the indentation value as needed */
+}
+
+
+

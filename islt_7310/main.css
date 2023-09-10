@@ -27,3 +27,12 @@
     margin: 5px 0;
     /* Add any other specific styles you want for the <li> items here */
 }
+main p:first-of-type::first-letter {
+    font-size: 150%; /* Change the font size of the first letter */
+    color: #E53935; /* Change the color of the first letter */
+}
+
+/* Indent the first line of all other paragraphs after the first */
+main p:not(:first-of-type) {
+    text-indent: 1.5em; /* Adjust the indentation value as needed */
+}
