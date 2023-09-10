@@ -38,6 +38,10 @@ a:hover {
 .horizontal-nav {
     list-style-type: none;
     padding: 0;
+    display: -webkit-box; /* Safari, iOS, older versions of Chrome */
+    display: -moz-box; /* Older versions of Firefox */
+    display: -ms-flexbox; /* IE 10 */
+    display: -webkit-flex; /* Safari 6.1+ */
     display: flex;
 }
 
