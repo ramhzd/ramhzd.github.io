@@ -7,79 +7,156 @@
     <link rel="stylesheet" type="text/css" href="nav.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="description" content="Welcome to our website dedicated to Java programming for FTC robotics teams. Explore our resources and achieve success in FTC robotics competitions.">
+    <style>
+        /* Your existing CSS styles for larger screens */
+
+        /* Media query for screens smaller than 768px */
+        @media (max-width: 768px) {
+            /* Adjust styles for smaller screens here */
+
+            /* For example, stack the navigation links */
+            .horizontal-nav {
+                flex-direction: column; /* Stack links vertically */
+            }
+
+            /* Adjust other styles as needed */
+        }
+
+        /* Create a two-column layout */
+        .two-column-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 1;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        /* Style for the left column */
+        .left-column {
+            background-color: #f2f2f2; /* Set a background color */
+        }
+    </style>
 </head>
 <body>
-     <!-- Header Section -->
-     <header>
-        <h1>Welcome to our website about of Java Programming for FTC Robotics</h1>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to our website about Java Programming for FTC Robotics</h1>
     </header>
 
+    <!-- Navigation Section -->
     <nav>
-        <!-- Navagation Bar Section -->
-<ul class="horizontal-nav">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li class="dropdown">
-        <a href="project.html">Projects</a>
-        <ul class="dropdown-menu">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <!-- Add more dropdown items as needed -->
+        <!-- Navigation Bar Section -->
+        <ul class="horizontal-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="project.html">Projects</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <!-- Add more dropdown items as needed -->
+                </ul>
+            </li>
+            <li><a href="reflection.html">Teaching Philosophy</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
-        <li><a href="reflection.html">Teaching Philosophy</a></li>
-        <li><a href="#">Contact</a></li>
-    </li>
-</ul>
-
     </nav>
 
     <!-- Main Content Section -->
     <main>
-     <!-- Personal Information -->
-     <h1>Robert Michael</h1>
+        <!-- Personal Information -->
+        <section>
+            <h2>Robert Michael</h2>
+            <br>
+            <br>
 
-     <!-- About Me Subheading -->
-     <h3>About Me</h3>
- 
-     <!-- Paragraph -->
-     <p>
-        I graduated in 2002 from Southeast Missouri State University with a Business Administration degree. Now, I'm the Director of Technology at Notre Dame Regional High School. I love both technology and education. For more than 20 years, I've been learning and getting better at helping students, parents, and teachers. My job is to fix things and make new, creative solutions to help the school's technology.
+           
 
-        I also really enjoy coaching our school’s robotics team. It's a big part of my journey. I teach and help young minds grow with technology. Besides my school job, I'm also a tech specialist at Amerimart stores. I help with tech stuff for school and stores. I make sure people can easily understand the important information.
+            <!-- Emphasis -->
+            <p>
+                Life is full of <em>wonders</em> and <em>opportunities</em> for those who seek them.
+                <br>
+                <br>
 
-        My family makes me very happy, and they're really important to me. We do fun things together. 
+                
+            </p>
 
-                 <br>
-                 I also play racquetball to stay balanced and healthy, just like I balance my work and family.
- 
-     <!-- Blank Line -->
-     <br>
- 
-     <!-- Block Quote -->
-     <blockquote>
-         "Be still and know that I am with you." - Psalm 46:10
-     </blockquote>
- 
-     <!-- Emphasis -->
-     <p>
-         Life is full of <em>wonders</em> and <em>opportunities</em> for those who seek them.
- 
-         <!-- Bold -->
-         Don't be afraid to take that <strong>bold</strong> step towards your dreams.
-     </p>   
-     
-     <!-- Link to Resume PDF -->
-     <p>
-        <a href="Michaelresume.pdf" target="_blank" class="resume-link">My Resume (PDF)</filelink>
-    </p>
-        
+            
+        </section>
+
+        <!-- Create a two-column container -->
+        <div class="two-column-container">
+            <!-- Left column -->
+            <div class="column .left-column">
+                <!-- Content for the left column (About Me Personal Info) -->
+                <h2>About Me</h2>
+                <br>
+                <p> I graduated in 2002 from Southeast Missouri State University with a Business Administration degree. Now, I'm the Director of Technology at Notre Dame Regional High School. I love both technology and education. For more than 20 years, I've been learning and getting better at helping students, parents, and teachers. My job is to fix things and make new, creative solutions to help the school's technology.
+
+                    I also really enjoy coaching our school’s robotics team. It's a big part of my journey. I teach and help young minds grow with technology. Besides my school job, I'm also a tech specialist at Amerimart stores. I help with tech stuff for school and stores. I make sure people can easily understand the important information.
+    
+                    My family makes me very happy, and they're really important to me. We do fun things together.
+    
+                    <br>
+                    I also play racquetball to stay balanced and healthy, just like I balance my work and family.</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                     <!-- Video -->
+                        <video controls width="395">
+                        <source src="Michael CV.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    <!-- Bold -->
+                    Don't be afraid to take that <strong>bold</strong> step towards your dreams.
+                    <!-- Link to Resume PDF -->
+            <p>
+                
+            </p>
+            </div>
+
+            <!-- Right column -->
+            <div class="column">
+                <!-- Content for the right column  -->
+                <p><!-- Add an image here -->
+                    <br>
+                    <br>
+                    <img src="robertmichael.jpg" alt="Robert Michael's photo">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+
+                     <!-- Center the resume link -->
+                    <div style="text-align: center;">
+                    <a href="Michaelresume.pdf" target="_blank" class="resume-link">My Resume (PDF)</a>
+                 </div>
+                    </p>
+            </div>
+        </div>
     </main>
 
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2023 Robert Michael | Email: ramhzd@umsystem.edu</p>
     </footer>
-
 </body>
 </html>
