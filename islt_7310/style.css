@@ -102,7 +102,7 @@ main {
 /* Center-align the footer text */
 footer {
     text-align: center;
-    background-image: url(https://github.com/ramhzd/ramhzd.github.io/blob/main/islt_7310/images/bluefooter.jpg);
+    background-image: url('/images/bluefooter.jpg');
     background-size: cover; /* Adjust to your preference */
     background-repeat: no-repeat;
     background-color: rgba(255, 255, 255, 0.7); /* Adjust the last value for transparency */
@@ -113,3 +113,8 @@ img {
     height: auto; /* Adjust the height to your desired size */
 
 }
+/* Enlarge footer icons on hover */
+footer img:hover {
+    transform: scale(1.2); /* Increase the scale factor as needed */
+}
+
