@@ -102,17 +102,14 @@ main {
 /* Center-align the footer text */
 footer {
     text-align: center;
+    background-image: url('https://github.com/ramhzd/ramhzd.github.io/blob/main/islt_7310/images/fb.jpg');
+    background-size: cover; /* Adjust to your preference */
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the last value for transparency */
 }
 
 img {
     width: 30px; /* Adjust the width to your desired size */
     height: auto; /* Adjust the height to your desired size */
 
-}
-/* Set the background image for the footer */
-footer {
-    background-image: url('https://github.com/ramhzd/ramhzd.github.io/blob/main/islt_7310/images/fb.jpg');
-    background-size: cover; /* Adjust to your preference */
-    background-repeat: no-repeat;
-    background-color: rgba(255, 255, 255, 0.7); /* Adjust the last value for transparency */
 }
