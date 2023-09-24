@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Programming for FTC Robotics</title>
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="description" content="Welcome to our website dedicated to Java programming for FTC robotics teams. Explore our resources and achieve success in FTC robotics competitions.">
+    <style>
+        /* CSS for mobile navigation menu */
+        .mobile-nav {
+            display: none; /* Initially hide mobile navigation */
+        }
+
+        /* Media query to show mobile navigation for screens 768px and below */
+        @media (max-width: 768px) {
+            /* Hide desktop navigation */
+            #desktop-nav {
+                display: none;
+            }
+
+            /* Show mobile navigation */
+            .mobile-nav {
+                display: block;
+            }
+        }
+         /* Your existing CSS styles for larger screens */
+
+        /* Media query for screens smaller than 768px */
+        @media (max-width: 768px) {
+            /* Adjust styles for smaller screens here */
+
+            /* For example, stack the navigation links */
+            .horizontal-nav {
+                flex-direction: column; /* Stack links vertically */
+            }
+
+            /* Adjust other styles as needed */
+        }
+
+        /* Create a two-column layout */
+        .two-column-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 1;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        /* Style for the left column */
+        .left-column {
+    background-color: #f2f2f2; /* Set a background color */
+}
+    
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to our website about Java Programming for FTC Robotics</h1>
+    </header>
+
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav" class="horizontal-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="project.html">Projects</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <!-- Add more dropdown items as needed -->
+                </ul>
+            </li>
+            <li><a href="reflection.html">Teaching Philosophy</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <label for="mobile-menu" id="menu-icon">&#9776;</label>
+    <nav id="mobile-menu" class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="project.html">Projects</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <!-- Add more dropdown items as needed -->
+                </ul>
+            </li>
+            <li><a href="reflection.html">Teaching Philosophy</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Personal Information -->
+        <section>
+            <h2>Robert Michael</h2>
+            <br>
+            <br>
+
+           
+
+            <!-- Emphasis -->
+            <p>
+                Life is full of <em>wonders</em> and <em>opportunities</em> for those who seek them.
+                <br>
+                <br>
+
+                
+            </p>
+
+            
+        </section>
+
+        <!-- Create a two-column container -->
+        <div class="two-column-container">
+            <!-- Left column -->
+            <div class="column .left-column">
+                <!-- Content for the left column (About Me Personal Info) -->
+                <h2>About Me</h2>
+                <br>
+                <p> I graduated in 2002 from Southeast Missouri State University with a Business Administration degree. Now, I'm the Director of Technology at Notre Dame Regional High School. I love both technology and education. For more than 20 years, I've been learning and getting better at helping students, parents, and teachers. My job is to fix things and make new, creative solutions to help the school's technology.
+
+                    I also really enjoy coaching our school’s robotics team. It's a big part of my journey. I teach and help young minds grow with technology. Besides my school job, I'm also a tech specialist at Amerimart stores. I help with tech stuff for school and stores. I make sure people can easily understand the important information.
+    
+                    My family makes me very happy, and they're really important to me. We do fun things together.
+    
+                    <br>
+                    I also play racquetball to stay balanced and healthy, just like I balance my work and family.</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                     <!-- Video -->
+                        <video controls width="395">
+                        <source src="Michael CV.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    <!-- Bold -->
+                    Don't be afraid to take that <strong>bold</strong> step towards your dreams.
+                    <!-- Link to Resume PDF -->
+            <p>
+                
+            </p>
+            </div>
+
+            <!-- Right column -->
+            <div class="column">
+                <!-- Content for the right column  -->
+                <p><!-- Add an image here -->
+                    <br>
+                    <br>
+                    <img src="robertmichael.jpg" alt="Robert Michael's photo">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+
+                     <!-- Center the resume link -->
+                    <div style="text-align: center;">
+                    <a href="Michaelresume.pdf" target="_blank" class="resume-link">My Resume (PDF)</a>
+                 </div>
+                    </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Robert Michael | Email: ramhzd@umsystem.edu</p>
+    </footer>
+</body>
+<script>
+    // Function to toggle the active class on the "Projects" list item
+    function toggleProjectsDropdown() {
+        var projectsDropdown = document.querySelector('.dropdown');
+        projectsDropdown.classList.toggle('active');
+    }
+
+    // Function to close the dropdown menu when a link is clicked
+    function closeDropdown() {
+        var projectsDropdown = document.querySelector('.dropdown');
+        projectsDropdown.classList.remove('active');
+    }
+
+    // Add click event listeners to the "Projects" list item and all project links
+    var projectsLink = document.querySelector('.dropdown a');
+    var projectLinks = document.querySelectorAll('.dropdown-menu a');
+
+    projectsLink.addEventListener('click', function (e) {
+        toggleProjectsDropdown();
+        e.preventDefault(); // Prevent the default link behavior
+    });
+
+    projectLinks.forEach(function (link) {
+        link.addEventListener('click', closeDropdown);
+    });
+    function toggleMobileMenu() {
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (window.innerWidth <= 768) {
+            mobileMenu.style.display = "block";
+        } else {
+            mobileMenu.style.display = "none";
+        }
+    }
+
+    // Initial toggle on page load
+    toggleMobileMenu();
+
+    // Listen for window resize events and toggle mobile menu accordingly
+    window.addEventListener("resize", toggleMobileMenu);
+</script>
+
+
+</html>

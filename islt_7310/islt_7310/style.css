@@ -1,0 +1,117 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #f5f1f1; /* You can replace #FF5733 with your chosen hex color code */
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    color: #007bff; /* You can replace #FF5733 with your chosen hex color code */
+    font-family: 'Roboto', sans-serif;
+}
+/* main.css */
+
+/* Style the first letter of the first paragraph */
+main p:first-of-type::first-letter {
+    font-size: 150%; /* Change the font size of the first letter */
+    color: #E53935; /* Change the color of the first letter */
+}
+
+/* Indent the first line of all other paragraphs after the first */
+main p:not(:first-of-type) {
+    text-indent: 1.5em; /* Adjust the indentation value as needed */
+}
+
+.reflection {
+    /* Add any additional styling for reflection paragraphs here */
+    /* For example, if you want to remove the border and add padding: */
+    border: none;
+    padding: 0;
+}
+
+.reflection-p:not(:first-of-type) {
+    text-indent: 1.5em; /* Adjust the indentation value as needed */
+}
+
+/* Apply flexbox layout */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, nav, main, footer {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* Style the header */
+header {
+    background-color: #E53935;
+    color: white;
+    text-align: center;
+}
+
+/* Style the navigation */
+nav {
+    background-color: #007bff;
+}
+
+.horizontal-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.horizontal-nav li {
+    margin: 0 15px;
+}
+
+/* Style the main content */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.personal-info, .additional-info {
+    flex-basis: calc(50% - 20px);
+}
+
+/* mobile layout */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .personal-info, .additional-info {
+        flex-basis: 100%;
+    }
+}
+/* Style for the left column */
+.left-column {
+    /* Remove the background-color property or set it to transparent */
+    background-color: transparent;
+}
+/* Center-align the footer text */
+footer {
+    text-align: center;
+}
+
+img {
+    width: 30px; /* Adjust the width to your desired size */
+    height: 30px; /* Adjust the height to your desired size */
+
+}
+/* Set the background image for the footer */
+footer {
+    background-image: url('https://github.com/ramhzd/ramhzd.github.io/tree/main/islt_7310/images/footer.avif');
+    background-size: cover; /* Adjust to your preference */
+    background-repeat: no-repeat;
+}
