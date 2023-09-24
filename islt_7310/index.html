@@ -124,7 +124,30 @@
     </footer>
 </body>
 <script>
-    // Function to toggle mobile menu visibility
+    // Function to toggle the active class on the "Projects" list item
+    function toggleProjectsDropdown() {
+        var projectsDropdown = document.querySelector('.dropdown');
+        projectsDropdown.classList.toggle('active');
+    }
+
+    // Function to close the dropdown menu when a link is clicked
+    function closeDropdown() {
+        var projectsDropdown = document.querySelector('.dropdown');
+        projectsDropdown.classList.remove('active');
+    }
+
+    // Add click event listeners to the "Projects" list item and all project links
+    var projectsLink = document.querySelector('.dropdown a');
+    var projectLinks = document.querySelectorAll('.dropdown-menu a');
+
+    projectsLink.addEventListener('click', function (e) {
+        toggleProjectsDropdown();
+        e.preventDefault(); // Prevent the default link behavior
+    });
+
+    projectLinks.forEach(function (link) {
+        link.addEventListener('click', closeDropdown);
+    });
     function toggleMobileMenu() {
         var mobileMenu = document.getElementById("mobile-menu");
         if (window.innerWidth <= 768) {
