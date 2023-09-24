@@ -14,28 +14,49 @@
     <header>
         <h1>Welcome to the Homepage of Java Programming for FTC Robotics</h1>
     </header>
-    <nav>
-        <!-- Navagation Bar Section -->
-<ul class="horizontal-nav">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li class="dropdown">
-        <a href="project.html">Projects</a>
-        <ul class="dropdown-menu">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <!-- Add more dropdown items as needed -->
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav" class="horizontal-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="project.html">Projects</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <!-- Add more dropdown items as needed -->
+                </ul>
+            </li>
+            <li><a href="reflection.html">Teaching Philosophy</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
-        <li><a href="reflection.html">Teaching Philosophy</a></li>
-        <li><a href="#">Contact</a></li>
-    </li>
-</ul>
+    </nav>
 
+    <!-- Mobile Navigation -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" id="menu-icon">&#9776;</label>
+    <nav id="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="project.html">Projects</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <!-- Add more dropdown items as needed -->
+                </ul>
+            </li>
+            <li><a href="reflection.html">Teaching Philosophy</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </nav>
    
     <!-- Main Content Section -->
-    <main>
+    <main class="grid-container">
+        <section class="main-content">
         <p>
             Welcome to our website dedicated to Java programming for FTC (First Tech Challenge) robotics teams. We are here to help you excel in your FTC robotics competitions through comprehensive Java programming resources and guidance.
         </p>
@@ -45,6 +66,8 @@
         <p>
             FTC Robotics stands for "First Tech Challenge Robotics." It is a competitive robotics program specifically designed for middle and high school students. FTC is one of the programs offered by FIRST (For Inspiration and Recognition of Science and Technology), a non-profit organization founded by inventor Dean Kamen. FTC provides students with the opportunity to design, build, and program robots to compete in challenging and exciting games and tasks.
     </p>
+</section>
+<section class="sidebar">
     <p>Here are some key points about FTC Robotics:</p>
     <main-ul>
         <li>
@@ -74,6 +97,7 @@
             <li>Providing step-by-step tutorials and examples.</li>
             <li>Promoting innovation and excellence in FTC robotics.</li>
         </main-ul>
+    </section>
     </main>
 
     <!-- Footer Section -->

@@ -14,30 +14,52 @@
      <header>
         <h1>Welcome to our website about of Java Programming for FTC Robotics</h1>
     </header>
-    <nav>
-        <!-- Navagation Bar Section -->
-<ul class="horizontal-nav">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li class="dropdown">
-        <a href="project.html">Projects</a>
-        <ul class="dropdown-menu">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <!-- Add more dropdown items as needed -->
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav" class="horizontal-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="project.html">Projects</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <!-- Add more dropdown items as needed -->
+                </ul>
+            </li>
+            <li><a href="reflection.html">Teaching Philosophy</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
-        <li><a href="reflection.html">Teaching Philosophy</a></li>
-        <li><a href="#">Contact</a></li>
-    </li>
-</ul>
+    </nav>
 
+    <!-- Mobile Navigation -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" id="menu-icon">&#9776;</label>
+    <nav id="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="project.html">Projects</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <!-- Add more dropdown items as needed -->
+                </ul>
+            </li>
+            <li><a href="reflection.html">Teaching Philosophy</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </nav>
      <!-- Teaching Philosophy Subheading -->
      <h3>Teaching Philosophy</h3>
 
     <!-- Main Content Section -->
-    <main>
+    <main class="grid-container">
+        
+    <section class="main-content">
         <reflection-p>
             My teaching philosophy aligns perfectly with the principles upheld by "my website". Experiential learning is at the core
             of my approach, and this platform embodies that ethos by immersing students in the world of FTC robotics. As the
@@ -78,7 +100,7 @@
             only equip students with practical skills but also instill in them a passion for innovation and problem-solving that can
             shape their future endeavors.
         </reflection-p>
-        
+       </section> 
     </main>
 
     <!-- Footer Section -->
