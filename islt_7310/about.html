@@ -53,8 +53,8 @@
 
         /* Style for the left column */
         .left-column {
-            background-color: #f2f2f2; /* Set a background color */
-        }
+    background-color: #f2f2f2; /* Set a background color */
+}
     
     </style>
 </head>
@@ -84,7 +84,6 @@
     </nav>
 
     <!-- Mobile Navigation -->
-    <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" id="menu-icon">&#9776;</label>
     <nav id="mobile-menu">
         <ul>
@@ -197,4 +196,22 @@
         <p>&copy; 2023 Robert Michael | Email: ramhzd@umsystem.edu</p>
     </footer>
 </body>
+<script>
+    // Function to toggle mobile menu visibility
+    function toggleMobileMenu() {
+        var mobileMenu = document.getElementById("mobile-menu");
+        if (window.innerWidth <= 768) {
+            mobileMenu.style.display = "block";
+        } else {
+            mobileMenu.style.display = "none";
+        }
+    }
+
+    // Initial toggle on page load
+    toggleMobileMenu();
+
+    // Listen for window resize events and toggle mobile menu accordingly
+    window.addEventListener("resize", toggleMobileMenu);
+</script>
+
 </html>

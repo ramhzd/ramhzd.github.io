@@ -1,35 +1,35 @@
-/* Existing code from your previous message */
-
-/* Hide the mobile menu by default */
-#mobile-menu {
-    display: none;
+/* CSS for mobile navigation menu */
+.mobile-nav {
+    display: none; /* Initially hide mobile navigation */
 }
 
-/* Style the label as a menu icon */
-#menu-icon {
-    font-size: 24px;
-    cursor: pointer;
-}
+/* Media query to show mobile navigation for screens 768px and below */
+@media (max-width: 768px) {
+    /* Hide desktop navigation */
+    #desktop-nav {
+        display: none;
+    }
 
-/* Show the mobile menu when the checkbox is checked */
-#menu-toggle:checked + #mobile-menu {
-    display: block;
-}
+    /* Show mobile navigation */
+    .mobile-nav {
+        display: block;
+    }
 
-/* Style the mobile menu items */
-#mobile-menu ul {
-    list-style-type: none;
-    padding: 0;
-}
+    /* Style the mobile menu items */
+    #mobile-menu ul {
+        list-style-type: none;
+        padding: 0;
+    }
 
-#mobile-menu li {
-    margin: 10px 0;
-}
+    #mobile-menu li {
+        margin: 10px 0;
+    }
 
-#mobile-menu a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    #mobile-menu a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
 }
 
 /* Styles from nav.css */
