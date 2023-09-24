@@ -111,7 +111,7 @@ img {
 }
 /* Set the background image for the footer */
 footer {
-    background-image: url('https://github.com/ramhzd/ramhzd.github.io/tree/main/islt_7310/images/footerbackground.jpg');
+    background-image: img src="images/footerbackground.jpg";
     background-size: cover; /* Adjust to your preference */
     background-repeat: no-repeat;
     background-color: rgba(255, 255, 255, 0.7); /* Adjust the last value for transparency */
