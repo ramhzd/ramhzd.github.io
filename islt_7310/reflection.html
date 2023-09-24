@@ -9,6 +9,25 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta name="description" content="Welcome to our website dedicated to Java programming for FTC robotics teams. Explore our resources and achieve success in FTC robotics competitions.">
 </head>
+<style>
+    /* CSS for mobile navigation menu */
+    .mobile-nav {
+        display: none; /* Initially hide mobile navigation */
+    }
+
+    /* Media query to show mobile navigation for screens 768px and below */
+    @media (max-width: 768px) {
+        /* Hide desktop navigation */
+        #desktop-nav {
+            display: none;
+        }
+
+        /* Show mobile navigation */
+        .mobile-nav {
+            display: block;
+        }
+    }
+</style>
 <body>
      <!-- Header Section -->
      <header>
