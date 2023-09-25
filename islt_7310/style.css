@@ -60,12 +60,12 @@ header {
 }
 
 footer{
+    
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /*background-color: rgba(68, 50, 50, 0.2);*/
-    background-image: url('https://github.com/ramhzd/ramhzd.github.io/blob/main/islt_7310/images/bluefooter.jpg');
-    
+    background-color: rgba(207, 51, 3, 0.9);
+    background-image: url(https://content.invisioncic.com/p289038/monthly_2020_02/Newman.thumb.jpg.7b9c63815001d8f440820ca6c2990f43.jpg);
 }
 
 /* Style the navigation */
