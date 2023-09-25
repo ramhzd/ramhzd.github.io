@@ -1,3 +1,5 @@
+@import url('https://use.typekit.net/wgt4ysf.css');
+
 /* Reset some default styles */
 body, h1, h2, p {
     margin: 0;
@@ -117,4 +119,57 @@ img {
 footer img:hover {
     transform: scale(1.2); /* Increase the scale factor as needed */
 }
+@media print {
+    /* Set font color to black */
+    body, h1, p, ul, ol, blockquote {
+        color: black;
+    }
+
+    /* Use a serif font for all elements */
+    body, h1, p, ul, ol, blockquote, footer {
+        font-family: sans-serif;
+    }
+
+    /* Apply the custom font to the h1 element */
+    h1 {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    /* Adjust margins to 1 inch on all sides */
+    body {
+        margin: 0.25in;
+    }
+
+    /* Ensure all content fits on a single page */
+    body, h1, p, ul, ol, blockquote, footer {
+        page-break-inside: avoid;
+    }
+
+    /* Remove background colors for better print readability */
+    body, .left-column {
+        background-color: transparent;
+    }
+
+    /* Reduce font sizes to fit content on one page */
+    body {
+        font-size: 10pt; /* Adjust as needed */
+    }
+
+    h1 {
+        font-size: 16pt; /* Adjust as needed */
+    }
+
+    p {
+        font-size: 8pt; /* Adjust as needed */
+    }
+
+    ul, ol {
+        font-size: 8pt; /* Adjust as needed */
+    }
+
+    blockquote {
+        font-size: 10pt; /* Adjust as needed */
+    }
+}
+
 
