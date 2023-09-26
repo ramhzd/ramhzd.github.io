@@ -1,7 +1,5 @@
 /* CSS for mobile navigation menu */
-.mobile-nav {
-    display: none; /* Initially hide mobile navigation */
-}
+
 
 /* Media query to show mobile navigation for screens 768px and below */
 @media (max-width: 768px) {
@@ -26,10 +24,24 @@
     }
 
     #mobile-menu a {
+        text-align: center;
         text-decoration: none;
-        color: #333;
+        color: white;
         font-weight: bold;
     }
+    #mobile-nav {
+        display: none; /* Initially hide mobile navigation */
+    }
+}
+#menu-icon {
+    display: none;
+}
+
+@media (min-width: 769px) {
+    .mobile-nav {
+        display: none;
+    }
+
 }
 
 /* Styles from nav.css */
@@ -50,7 +62,7 @@ ul {
 li {
     margin: 0;
     padding: 0 20px; /* Adjust the spacing between list items */
-    border-right: 1px solid #FFFFFF; /* Add a border to the right of each list item */
+    border-right: 1px solid white; /* Add a border to the right of each list item */
 }
 
 /* Remove the border from the last list item */
@@ -122,3 +134,4 @@ a:hover {
 .resume-link {
     color: #007BFF;
 }
+
