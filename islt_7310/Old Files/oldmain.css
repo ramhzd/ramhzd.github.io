@@ -1,0 +1,76 @@
+/* main.css */
+
+/* Styles for the main content section */
+.main-content {
+   background-color: #f9f9f9; /* Background color for the main content */
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Additional styles for specific elements in the main content */
+.main-content h1 {
+    color: #E53935;
+    font-size: 28px; /* Larger font size for headings on mobile */
+}
+
+.main-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Style the main content <ul> */
+.main-ul {
+    list-style-type: disc;
+    /* Add any other specific styles you want for the <ul> here */
+}
+
+/* Style the main content <li> items */
+.main-li {
+    margin: 5px 0;
+    /* Add any other specific styles you want for the <li> items here */
+}
+
+main p:first-of-type::first-letter {
+    font-size: 150%; /* Change the font size of the first letter */
+    color: #E53935; /* Change the color of the first letter */
+}
+
+/* Indent the first line of all other paragraphs after the first */
+main p:not(:first-of-type) {
+    text-indent: 1.5em; /* Adjust the indentation value as needed */
+}
+
+/* Fluid grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+
+    /* Center the grid both horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main content section for fluid layout */
+.main-content {
+    grid-column: 1 / 2;
+}
+
+/* Sidebar section for fluid layout */
+.sidebar {
+    grid-column: 1 / 2;
+}
+
+@media (max-width: 767px) {
+    /* Adjust the layout for smaller screens (mobile) */
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column for smaller screens (mobile) */
+    }
+    
+    /* Decrease font size for smaller screens (mobile) */
+    .main-content h1 {
+        font-size: 24px; /* Smaller font size for headings on smaller screens (mobile) */
+    }
+}
+

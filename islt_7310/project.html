@@ -1,79 +1,53 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java Programming for FTC Robotics</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" type="text/css" href="nav.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="description" content="Welcome to our website dedicated to Java programming for FTC robotics teams. Explore our resources and achieve success in FTC robotics competitions.">
-</head>
-<style>
-    /* CSS for mobile navigation menu */
-    .mobile-nav {
-        display: none; /* Initially hide mobile navigation */
-    }
-
-    /* Media query to show mobile navigation for screens 768px and below */
-    @media (max-width: 768px) {
-        /* Hide desktop navigation */
-        #desktop-nav {
-            display: none;
-        }
-
-        /* Show mobile navigation */
-        .mobile-nav {
-            display: block;
-        }
-    }
-</style>
-<body>
-     <!-- Header Section -->
-     <header>
-        <h1>Welcome to our website about of Java Programming for FTC Robotics</h1>
-    </header>
-
-   <!-- Desktop Navigation -->
-   <nav id="desktop-nav" class="horizontal-nav">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li class="dropdown">
-            <a href="project.html">Projects</a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-                <!-- Add more dropdown items as needed -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="nav.css">
+        <title>Java Programming for FTC Robotics</title> 
+    </head>
+    <body>
+         <!-- Header Section -->
+         <header>
+            <div id="brand"><a href= "index.html"> Java Programming for FTC Robotics</a></div>
+            <nav>
+                <ul>
+                <li id="home"><a href="index.html">Home</a></li>
+                <li id="about"><a href="about.html">About</a></li>
+                <li id="projects" class="dropdown">
+                    <a href="project.html">Projects</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                    </ul>
+                        <!-- Add more dropdown items as needed -->
+                <li id="reflection"><a href="reflection.html">Teaching Philosophy</a></li>
+                <li id="contact"><a href="#">Contact</a></li>
             </ul>
-        </li>
-        <li><a href="reflection.html">Teaching Philosophy</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
-
-<!-- Mobile Navigation -->
-<label for="mobile-menu" id="menu-icon">&#9776;</label>
-<nav id="mobile-menu" class="mobile-nav">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li class="dropdown">
-            <a href="project.html">Projects</a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-                <!-- Add more dropdown items as needed -->
-            </ul>
-        </li>
-        <li><a href="reflection.html">Teaching Philosophy</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
-    
-
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="project.html">Projects</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                            <!-- Add more dropdown items as needed -->
+                        </ul>
+                    </li>
+                    <li><a href="reflection.html">Teaching Philosophy</a></li>
+                    <li><a href="#">Contact</a></li>   
+                </ul>
+            </div>        
+        </header>
 
     <!-- Main Content Section -->
     <main class="grid-container">

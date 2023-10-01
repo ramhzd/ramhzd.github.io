@@ -1,177 +1,127 @@
-@import url('https://use.typekit.net/wgt4ysf.css');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
-/* Reset some default styles */
-body, h1, h2, p {
-    margin: 0;
-    padding: 0;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-    color: #f5f1f1; /* You can replace #FF5733 with your chosen hex color code */
-    font-family: 'Roboto', sans-serif;
-}
-
-h2 {
-    color: #007bff; /* You can replace #FF5733 with your chosen hex color code */
-    font-family: 'Roboto', sans-serif;
-}
-/* main.css */
-
-/* Style the first letter of the first paragraph */
-main p:first-of-type::first-letter {
-    font-size: 150%; /* Change the font size of the first letter */
-    color: #E53935; /* Change the color of the first letter */
-}
-
-/* Indent the first line of all other paragraphs after the first */
-main p:not(:first-of-type) {
-    text-indent: 1.5em; /* Adjust the indentation value as needed */
-}
-
-.reflection {
-    /* Add any additional styling for reflection paragraphs here */
-    /* For example, if you want to remove the border and add padding: */
-    border: none;
-    padding: 0;
-}
-
-.reflection-p:not(:first-of-type) {
-    text-indent: 1.5em; /* Adjust the indentation value as needed */
-}
-
-/* Apply flexbox layout */
 body {
+    background-color: #575555;
+    color: white;
+    font-family: "Poppins", sans-serif;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; 
+    min-height: 100vh; 
+  }
+
+header a {
+  text-decoration: none;
 }
 
-header, nav, main, footer {
-    width: 100%;
-    max-width: 800px;
-    padding: 20px;
-}
-
-/* Style the header */
 header {
-    background-color: #E53935;
+  padding: 0 20px;
+  background-color: white;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+    background-color: white;
+    text-align: center; /* Center text horizontally */
+    padding: 20px; /* Add padding for spacing */
+    color: #E53935; /* Text color */
+}
+
+footer {
+    margin-top: auto; /* Push the footer to the bottom */
+  }
+
+footer img {
+    transition: transform 0.2s; /* Add a smooth transition effect */
+  }
+  
+  /* Scale up the images on hover */
+footer img:hover {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+  }
+
+#brand {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #E53935;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center; 
+  }
+  
+  .centered-text {
+    font-weight: bold; 
+    text-align: center; 
+  }
+  
+  
+  .main-content p {
+    margin: 10px 0; 
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+}
+
+
+.left-column {
+    background-color: #575555;
+    padding: 20px;
     color: white;
     text-align: center;
 }
 
-footer{
-    
+
+.column {
     text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /*background-color: rgba(207, 51, 3, 0.9);*/
-    background-image: url(https://content.invisioncic.com/p289038/monthly_2020_02/Newman.thumb.jpg.7b9c63815001d8f440820ca6c2990f43.jpg);
-    /*background-image: url(bluefooter.jpg);*/
+    background-color: #575555;
+    padding: 20px;
+    color: white;
 }
 
-/* Style the navigation */
-nav {
-    background-color: #007bff;
-}
-
-.horizontal-nav {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.horizontal-nav li {
-    margin: 0 15px;
-}
-
-/* Style the main content */
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.personal-info, .additional-info {
-    flex-basis: calc(50% - 20px);
-}
-
-/* mobile layout */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     main {
-        flex-direction: column;
+        display: block; /* Switch to one column */
     }
 
-    .personal-info, .additional-info {
-        flex-basis: 100%;
+    .left-column,
+    .column {
+        grid-column: auto; /* Reset column layout */
+        text-align: center; /* Center align the content */
+        padding: 20px;
+        background-color: #575555;
+        color: white;
     }
 }
-/* Style for the left column */
-.left-column {
-    /* Remove the background-color property or set it to transparent */
-    background-color: transparent;
+
+.larger-text {
+    font-size: 28px; /* Adjust the font size as needed */
 }
 
-img {
-    width: 30px; /* Adjust the width to your desired size */
-    height: auto; /* Adjust the height to your desired size */
+.ftc {
+    max-width: 100%; /* Make the image fit the container width */
+    height: auto; /* Maintain the image's aspect ratio */
 
 }
-/* Enlarge footer icons on hover */
-footer img:hover {
-    transform: scale(1.2); /* Increase the scale factor as needed */
-}
-@media print {
-    /* Set font color to black */
-    body, h1, p, ul, ol, blockquote {
-        color: black;
-    }
 
-    /* Use a serif font for all elements */
-    body, h1, p, ul, ol, blockquote, footer {
-        font-family: sans-serif;
-    }
-
-    /* Apply the custom font to the h1 element */
-    h1 {
-        font-family: 'Roboto', sans-serif;
-    }
-
-    /* Adjust margins to 1 inch on all sides */
-    body {
-        margin: 0.25in;
-    }
-
-    /* Ensure all content fits on a single page */
-    body, h1, p, ul, ol, blockquote, footer {
-        page-break-inside: avoid;
-    }
-
-    /* Remove background colors for better print readability */
-    body, .left-column {
-        background-color: transparent;
-    }
-
-    /* Reduce font sizes to fit content on one page */
-    body {
-        font-size: 10pt; /* Adjust as needed */
-    }
-
-    h1 {
-        font-size: 16pt; /* Adjust as needed */
-    }
-
-    p {
-        font-size: 8pt; /* Adjust as needed */
-    }
-
-    ul, ol {
-        font-size: 8pt; /* Adjust as needed */
-    }
-
-    blockquote {
-        font-size: 10pt; /* Adjust as needed */
-    }
+.larger-header {
+    font-size: 24px; /* Adjust the font size as needed */
 }
 
 
