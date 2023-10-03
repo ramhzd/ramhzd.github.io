@@ -169,6 +169,10 @@ ul {
   .dropdown:hover .dropdown-menu {
     display: block; 
   }
-
+  @media screen and (max-width: 768px) {
+    footer {
+        max-width: 100%; /* Allow full width on small screens */
+    }
+}
   
 

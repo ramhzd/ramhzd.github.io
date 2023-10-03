@@ -49,73 +49,42 @@
         </div>        
     </header>
 
+
+    <!-- Main Content Section -->
     <main>
-        <!-- Left Column -->
-        <div class="column left-column">
-            <!-- Personal Information -->
-            <section>
-                <br>
-                <h2>Robert Michael</h2>
-                <br>
-                <br>
-
-                <img src="robertmichael.jpg" alt="Robert Michael's photo" id="profile-image">
-                <br>
-                <br>
-                <br>
-                <!-- Emphasis -->
-               
-            </section>
-
-            <p>
-                <a href="Michaelresume.pdf" target="_blank" class="resume-link">My Resume (PDF)</a>
-            </p>
-    
+        <body>
+            <h1>Contact Us</h1>
             <br>
             <br>
-            <br>
-            <p>
-                Don't be afraid to take that <strong>bold</strong> step towards your dreams.
-            </p>
-            
-         
-            
-        </div>
-    
-        <!-- Right Column -->
-        <div class="column">
-            <!-- Add an image here -->
-            <br>
-            <br>
-            <h2>About Me</h2>
-            <br>
-            <p> I graduated in 2002 from Southeast Missouri State University with a Business Administration degree. Now, I'm the Director of Technology at Notre Dame Regional High School. I love both technology and education. For more than 20 years, I've been learning and getting better at helping students, parents, and teachers. My job is to fix things and make new, creative solutions to help the school's technology.
-    
-                I also really enjoy coaching our school’s robotics team. It's a big part of my journey. I teach and help young minds grow with technology. Besides my school job, I'm also a tech specialist at Amerimart stores. I help with tech stuff for school and stores. I make sure people can easily understand the important information.
-        
-                My family makes me very happy, and they're really important to me. We do fun things together.
-
+            <form id="contactForm" action="email.php" method="post">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required>
                 
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+                
+                <input type="submit" value="Send" id="submitButton">
+            </form>
         
-                <br>
-                I also play racquetball to stay balanced and healthy, just like I balance my work and family.</p>
-                <br>
-                <br>
-                <br>
-                <video controls width="395">
-                    <source src="Michael CV.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                      
-            <!-- Center the resume link -->
-            
-        </div>
     </main>
+
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2023 Robert Michael |<img src="images/email.ico" alt="Email Icon"> ramhzd@umsystem.edu | <img src="images/phone.ico" alt="Phone Icon"> 1-888-888-8888</p> 
     </footer>
-</body>
-<script src="index.js"></script>
 
+</body>
+<script 
+src="index.js">
+window.onload = function() {
+            document.getElementById("firstName").focus();
+
+        };
+</script>
 </html>

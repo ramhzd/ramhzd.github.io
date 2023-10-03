@@ -28,11 +28,14 @@ header {
 }
 
 footer {
-    background-color: white;
-    text-align: center; /* Center text horizontally */
-    padding: 20px; /* Add padding for spacing */
-    color: #E53935; /* Text color */
+  background-color: white;
+  text-align: center;
+  padding: 10px; /* Reduce the padding for spacing */
+  color: #E53935;
+  max-width: 90%; /* Set a maximum width for the footer */
+  margin: 0 auto; /* Center the footer horizontally */
 }
+
 
 footer {
     margin-top: auto; /* Push the footer to the bottom */
@@ -124,4 +127,31 @@ footer img:hover {
     font-size: 24px; /* Adjust the font size as needed */
 }
 
+body {
+  font-family: Arial, sans-serif;
+}
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
