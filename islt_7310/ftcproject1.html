@@ -16,7 +16,7 @@
             <li id="home"><a href="index.html">Home</a></li>
             <li id="about"><a href="about.html">About</a></li>
             <li id="projects" class="dropdown">
-                <a href="#">Projects</a>
+                <a href="project.html">Projects</a>
                 <ul class="dropdown-menu">
                     <li><a href="ftcproject1.html">Project 1</a></li>
                     <li><a href="ftcproject2.html">Project 2</a></li>
@@ -24,7 +24,7 @@
                 </ul>
                     <!-- Add more dropdown items as needed -->
             <li id="reflection"><a href="reflection.html">Teaching Philosophy</a></li>
-            <li id="contact"><a href="contact.html">Contact</a></li>
+            <li id="contact"><a href="#">Contact</a></li>
         </ul>
         </nav>
         <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
@@ -33,9 +33,9 @@
             <div class="bar3"></div>
             <ul class="mobile-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>S
+                <li><a href="about.html">About</a></li>
                 <li class="dropdown">
-                    <a href="#">Projects</a>
+                    <a href="project.html">Projects</a>
                     <ul class="dropdown-menu">
                         <li><a href="ftcproject1.html">Project 1</a></li>
                         <li><a href="ftcproject2.html">Project 2</a></li>
@@ -44,7 +44,7 @@
                     </ul>
                 </li>
                 <li><a href="reflection.html">Teaching Philosophy</a></li>
-                <li><a href="contact.html">Contact</a></li>   
+                <li><a href="#">Contact</a></li>   
             </ul>
         </div>        
     </header>
@@ -52,26 +52,20 @@
 
     <!-- Main Content Section -->
     <main>
-        <body>
-            <h1>Contact Us</h1>
-            <br>
-            <br>
-            <form id="contactForm" action="email.php" method="post">
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" placeholder="John" required>
-                <br>
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
-                <br>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
-                <br>
-                <input type="submit" value="Send" id="submitButton">
-            </form>
-        
+        Description:
+        <br>
+        In this project, I focused on teleoperated robot control during an FTC competition. Using Java and gamepad input, I
+        wrote code to control the robot's movements, manipulate game objects, and interact with other robots. The challenge
+        required precise motor control, strategic decision-making, and real-time responsiveness to opponents' actions.    
+        <br>
+        <br>
+        <br>
+        Reflection:
+        <br>
+Controlling the robot during live competition was an adrenaline rush. I had to stay calm under pressure, communicate
+effectively with my alliance partners, and adapt to changing game conditions. This experience improved my ability to
+think on my feet and reinforced the importance of teamwork in robotics. It was a great opportunity to apply
+programming skills in a competitive environment and learn how software and hardware work together in real-time.
     </main>
 
     <!-- Footer Section -->
@@ -80,11 +74,5 @@
     </footer>
 
 </body>
-<script 
-src="index.js">
-window.onload = function() {
-            document.getElementById("firstName").focus();
-
-        };
-</script>
+<script src="index.js"></script>
 </html>

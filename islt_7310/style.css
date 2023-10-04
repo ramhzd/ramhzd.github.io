@@ -155,3 +155,54 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+/*This is the table section of my CSS*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 5px solid white;
+}
+
+/* Style for the caption */
+caption {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+/* Style for header row */
+thead tr {
+  background-color: #007bff;
+}
+
+/* Style for alternate rows */
+tbody tr:nth-child(odd) {
+  background-color: #007bff;
+}
+
+/* Style for the last row */
+tbody tr:last-child,
+tfoot tr {
+  background-color: #fa0a0a;
+}
+
+/* Style for table cells */
+th, td {
+  padding: 8px;
+  border: 5px solid #ddd;
+  text-align: center;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  table {
+      font-size: 14px;
+  }
+  th, td {
+      padding: 6px;
+  }
+  caption {
+      font-size: 16px;
+  }
+}
+
