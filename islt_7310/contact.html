@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="nav.css">
+    <style>
+        contactbody {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            text-align: center;
+        }
+    </style>
     <title>Java Programming for FTC Robotics</title> 
 </head>
 <body>
@@ -52,8 +66,9 @@
 
     <!-- Main Content Section -->
     <main>
-        <body>
-            <h1>Contact Us</h1>
+        <h1>Contact Us</h1>
+        <contactbody>
+            
             <br>
             <br>
             <form id="contactForm" action="email.php" method="post">
@@ -79,12 +94,11 @@
         <p>&copy; 2023 Robert Michael |<img src="images/email.ico" alt="Email Icon"> ramhzd@umsystem.edu | <img src="images/phone.ico" alt="Phone Icon"> 1-888-888-8888</p> 
     </footer>
 
-</body>
+</contactbody>
 <script 
 src="index.js">
 window.onload = function() {
             document.getElementById("firstName").focus();
-
         };
 </script>
 </html>
