@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <style>
+        contactbody {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            text-align: center;
+        }
+    </style>
+    <title>Java Programming for FTC Robotics</title> 
+</head>
+<body>
+     <!-- Header Section -->
+     <header>
+        <div id="brand"><a href= "index.html"> Java Programming for FTC Robotics</a></div>
+        <nav>
+            <ul>
+            <li id="home"><a href="index.html">Home</a></li>
+            <li id="about"><a href="about.html">About</a></li>
+            <li id="projects" class="dropdown">
+                <a href="#">Projects</a>
+                <ul class="dropdown-menu">
+                    <li><a href="ftcproject1.html">Project 1</a></li>
+                    <li><a href="ftcproject2.html">Project 2</a></li>
+                    <li><a href="ftcproject3.html">Project 3</a></li>
+                </ul>
+                    <!-- Add more dropdown items as needed -->
+            <li id="reflection"><a href="reflection.html">Teaching Philosophy</a></li>
+            <li id="contact"><a href="contact.html">Contact</a></li>
+        </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>S
+                <li class="dropdown">
+                    <a href="#">Projects</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ftcproject1.html">Project 1</a></li>
+                        <li><a href="ftcproject2.html">Project 2</a></li>
+                        <li><a href="ftcproject3.html">Project 3</a></li>
+                        <!-- Add more dropdown items as needed -->
+                    </ul>
+                </li>
+                <li><a href="reflection.html">Teaching Philosophy</a></li>
+                <li><a href="contact.html">Contact</a></li>   
+            </ul>
+        </div>        
+    </header>
+
+
+    <!-- Main Content Section -->
+    <main>
+        <h1>Contact Us</h1>
+        <contactbody>
+            
+            <br>
+            <br>
+            <form id="contactForm" action="email.php" method="post">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                <br>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+                <br>
+                <input type="submit" value="Send" id="submitButton">
+            </form>
+        
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Robert Michael |<img src="images/email.ico" alt="Email Icon"> ramhzd@umsystem.edu | <img src="images/phone.ico" alt="Phone Icon"> 1-888-888-8888</p> 
+    </footer>
+
+</contactbody>
+<script 
+src="index.js">
+window.onload = function() {
+            document.getElementById("firstName").focus();
+        };
+</script>
+</html>
