@@ -71,12 +71,7 @@
             
             <br>
             <br>
-            <form action="https://formspree.io/f/xzblkopj"
-            method="POST">
-            
-                <label for="subject"> Subject:</label>
-                <input type="button" value="Educational Website Contact">
-
+            <form action="mailto:your@email.com" method="post" enctype="text/plain">
                 <label for="first_name">First Name:</label>
                 <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
     
@@ -88,8 +83,8 @@
     
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
-                                    
-                <input type="submit" value="Send">
+    
+                <input type="submit" value="Send" onclick="sendEmail()">
             </form>
         
     </main>
@@ -100,8 +95,23 @@
     </footer>
 
 </contactbody>
-<script 
-src="index.js">
-      
+
+<script>
+function sendEmail() {
+            const firstName = document.getElementById("first_name").value;
+            const lastName = document.getElementById("last_name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+            const toEmail = "ramhzd@umsystem.edu";
+            const fromEmail = "email"
+            const subject = "Educational Website Contact"; // The default subject
+
+            // Generate a mailto URL with the subject and body
+            const mailtoURL = `mailto:?subject=${encodeURIComponent(subject)}&body=Name: ${firstName} ${lastName}%0D%0AEmail: ${email}%0D%0AMessage:%0D%0A${encodeURIComponent(message)}`;
+
+            // Open the user's default email client with the pre-filled subject and body
+            window.location.href = mailtoURL;
+        }
+        src="index.js"       
 </script>
 </html>
