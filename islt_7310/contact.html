@@ -47,7 +47,7 @@
             <div class="bar3"></div>
             <ul class="mobile-menu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>S
+                <li><a href="about.html">About</a></li>
                 <li class="dropdown">
                     <a href="#">Projects</a>
                     <ul class="dropdown-menu">
@@ -71,20 +71,25 @@
             
             <br>
             <br>
-            <form id="contactForm" action="email.html" method="post">
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" placeholder="John" required>
-                <br>
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
-                <br>
+            <form action="https://formspree.io/f/xzblkopj"
+            method="POST">
+            
+                <label for="subject"> Subject:</label>
+                <input type="button" value="Educational Website Contact">
+
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+    
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+    
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
-                <br>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+    
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
-                <br>
-                <input type="submit" value="Send" id="submitButton">
+                <textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
+                                    
+                <input type="submit" value="Send">
             </form>
         
     </main>
@@ -97,9 +102,6 @@
 </contactbody>
 <script 
 src="index.js">
-window.onload = function() {
-            document.getElementById("firstName").focus();
-        };
-        
+      
 </script>
 </html>

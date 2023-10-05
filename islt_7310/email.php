@@ -1,44 +1,29 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve form data
-    $firstName = $_POST["firstName"];
-    $lastName = $_POST["lastName"];
+    $first_name = $_POST["first_name"];
+    $last_name = $_POST["last_name"];
     $email = $_POST["email"];
     $message = $_POST["message"];
-
-    // Validate email
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        // Invalid email address
-        echo "Invalid email address. Please go back and correct it.";
-        exit;
-    }
-
-    // Recipient email address
-    $to = "ramhzd@umsystem.edu"; // Replace with your recipient's email address
-
-    // Subject line
+    
+    // Construct the subject line
     $subject = "Portfolio/Professional Website Contact";
-
-    // Email content
-    $emailContent = "First Name: $firstName\n";
-    $emailContent .= "Last Name: $lastName\n";
-    $emailContent .= "Email: $email\n\n";
-    $emailContent .= "Message:\n$message";
-
-    // Additional headers
-    $headers = "From: $email" . "\r\n" .
-               "Reply-To: $email" . "\r\n" .
-               "X-Mailer: PHP/" . phpversion();
-
-    // Send email
-    if (mail($to, $subject, $emailContent, $headers)) {
-        echo "Thank you for your message. We will get back to you soon.";
-    } else {
-        echo "Oops! Something went wrong and we couldn't send your message.";
-    }
+    
+    // Construct the email message
+    $email_message = "Name: $first_name $last_name\n";
+    $email_message .= "Email: $email\n\n";
+    $email_message .= "Message:\n$message";
+    
+    // Replace with your email address
+    $to = "ramhzd@umsystem.edu";
+    
+    // Send the email
+    mail($to, $subject, $email_message);
+    
+    // Redirect back to the contact page or a thank you page
+    header("Location: thankyou.html");
 } else {
-    // Accessing this script directly is not allowed
-    header("HTTP/1.0 403 Forbidden");
-    echo "Access Forbidden";
+    // Handle invalid access or other cases here
+    echo "Invalid access.";
 }
 ?>
+
