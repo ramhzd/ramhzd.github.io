@@ -96,7 +96,9 @@
 
 </contactbody>
 
-<script src="index.js">
+<script src="index.js"></script>
+
+<script>
 function sendEmail() {
             const firstName = document.getElementById("first_name").value;
             const lastName = document.getElementById("last_name").value;
@@ -111,7 +113,6 @@ function sendEmail() {
 
             // Open the user's default email client with the pre-filled subject and body
             window.location.href = mailtoURL;
-        }
-           
+        }        
 </script>
 </html>
