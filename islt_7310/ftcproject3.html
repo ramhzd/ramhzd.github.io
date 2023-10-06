@@ -13,19 +13,20 @@
         <div id="brand"><a href= "index.html"> Java Programming for FTC Robotics</a></div>
         <nav>
             <ul>
-            <li id="home"><a href="index.html">Home</a></li>
-            <li id="about"><a href="about.html">About</a></li>
-            <li id="projects" class="dropdown">
-                <a href="#">Projects</a>
-                <ul class="dropdown-menu">
-                    <li><a href="ftcproject1.html">Project 1</a></li>
-                    <li><a href="ftcproject2.html">Project 2</a></li>
-                    <li><a href="ftcproject3.html">Project 3</a></li>
-                </ul>
-                    <!-- Add more dropdown items as needed -->
-            <li id="reflection"><a href="reflection.html">Teaching Philosophy</a></li>
-            <li id="contact"><a href="#">Contact</a></li>
-        </ul>
+                <li id="home"><a href="index.html">Home</a></li>
+                <li id="about"><a href="about.html">About</a></li>
+                <li id="projects" class="dropdown">
+                    <a href="project.html">Projects</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="ftcproject1.html">Project 1</a></li>
+                        <li><a href="ftcproject2.html">Project 2</a></li>
+                        <li><a href="ftcproject3.html">Project 3</a></li>
+                        <!-- Add more dropdown items as needed -->
+                    </ul>
+                </li>
+                <li id="reflection"><a href="reflection.html">Teaching Philosophy</a></li>
+                <li id="contact"><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
         <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
             <div class="bar1"></div>
@@ -35,7 +36,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li class="dropdown">
-                    <a href="#S">Projects</a>
+                    <a href="project.html">Projects</a>
                     <ul class="dropdown-menu">
                         <li><a href="ftcproject1.html">Project 1</a></li>
                         <li><a href="ftcproject2.html">Project 2</a></li>
@@ -44,7 +45,7 @@
                     </ul>
                 </li>
                 <li><a href="reflection.html">Teaching Philosophy</a></li>
-                <li><a href="#">Contact</a></li>   
+                <li><a href="contact.html">Contact</a></li>   
             </ul>
         </div>        
     </header>
@@ -52,24 +53,86 @@
 
     <!-- Main Content Section -->
     <main>
-        FTC Robotics Experience 3: Sensor Integration and Precision Control
-        <br>
-        <br>
-
-        Description:
-        As the lead programmer for our FTC team, I undertook the challenge of integrating various sensors to enhance our
-        robot's functionality. Using Java and the FTC SDK, I incorporated gyroscopes, color sensors, and encoders into our
-        robot's control system. This enabled us to implement precise navigation, line-following, and object detection
-        capabilities.   
-
-        <br>
-        <br>
-        Reflection:
-This experience highlighted the importance of sensor feedback in robotics. Integrating sensors allowed us to make our
-robot more versatile and responsive to different game challenges. It was a steep learning curve, but it paid off in terms
-of improved robot performance during competitions. It also emphasized the role of software engineering in translating
-sensor data into actionable commands for the robot. This experience deepened my passion for robotics and coding.
-    </main>
+        <div class="center-table">
+            <h1>Enhancing FTC Robot Functionality with Sensor Integration: A Java Programming Project</h1>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CsxDKmhYNAI?si=98hhqhiZccaYLTGp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <br>
+            <br>
+            <table>
+                <tr>
+                    <th>Section</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Introduction</td>
+                    <td>In the fast-paced world of FTC (FIRST Tech Challenge) competitions, innovation and technical prowess play a pivotal role in a team's success. As the lead programmer for our FTC team, I took on the challenge of elevating our robot's capabilities by integrating various sensors. Leveraging Java and the FTC SDK (Software Development Kit), we successfully incorporated gyroscopes, color sensors, and encoders into our robot's control system. This strategic move allowed us to implement precise navigation, line-following, and object detection, giving us a competitive edge on the field.</td>
+                </tr>
+                <tr>
+                    <td>Coding for Teleoperated Control</td>
+                    <td>FTC competitions demand multifaceted robot functionality, including tasks such as autonomous navigation, object manipulation, and responding to dynamic game scenarios. Integrating sensors into the control system is a proven approach to achieving these objectives effectively.</td>
+                </tr>
+                <tr>
+                    <td>Java Code</td>
+                    <td>
+                        <pre>
+                            <code>
+                                import com.qualcomm.hardware.bosch.BNO055IMU;
+                                import com.qualcomm.robotcore.eventloop.opmode.OpMode;
+                                import com.qualcomm.robotcore.hardware.HardwareMap;
+                                import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
+                                import org.firstinspires.ftc.robotcore.external.navigation.AxesOrder;
+                                import org.firstinspires.ftc.robotcore.external.navigation.AxesReference;
+                                import org.firstinspires.ftc.robotcore.external.navigation.Orientation;
+                                
+                                public class GyroNavigation extends OpMode {
+                                    private BNO055IMU imu;
+                                    private Orientation angles;
+                                
+                                    @Override
+                                    public void init() {
+                                        // Initialize the IMU (gyro) sensor
+                                        HardwareMap hardwareMap = hardwareMap;
+                                        imu = hardwareMap.get(BNO055IMU.class, "imu");
+                                
+                                        BNO055IMU.Parameters parameters = new BNO055IMU.Parameters();
+                                        parameters.angleUnit = BNO055IMU.AngleUnit.DEGREES;
+                                        imu.initialize(parameters);
+                                    }
+                                
+                                    @Override
+                                    public void loop() {
+                                        // Read gyro sensor data
+                                        angles = imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES);
+                                
+                                        // Use gyro data for precise navigation
+                                        double heading = angles.firstAngle;  // Get the robot's heading in degrees
+                                        // Add navigation logic here based on the heading
+                                    }
+                                }
+                                
+                            </code>
+                        </pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Key Components of Sensor Integration</td>
+                    <td>
+                        <ul>
+                            <li>Precise Navigation: Gyroscopes help maintain accurate robot orientation, essential for navigating complex game environments.</li>
+                            <li>Line Following: Color sensors enable the robot to follow lines accurately, a common task in many FTC games.</li>
+                            <li>Motor Control: Set the power of the left and right drive motors based on gamepad input.</li>
+                            <li>Object Detection: Sensors such as encoders and color sensors enhance the robot's ability to detect and interact with game objects.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Conclusion</td>
+                    <td>The integration of sensors into our FTC robot's control system, accomplished using Java and the FTC SDK, significantly improved our team's performance. Precise navigation, line-following capabilities, and object detection allowed us to tackle game challenges with confidence. As lead programmer, this project exemplified the value of innovative programming in the world of FTC robotics competitions.</td>
+                </tr>
+            </table>
+    
+        </div>  
 
     <!-- Footer Section -->
     <footer>
