@@ -231,9 +231,20 @@ th, td {
     }
 }
 .center-table {
-  text-align: center;
-  margin: 30 auto;
-  max-width: auto; /* Adjust this width as needed */
+  margin: 0 auto; /* This centers the table horizontally */
+  max-width: 800px; /* Adjust the maximum width as needed */
+  width: 100%; /* Ensure the table takes full width on smaller screens */
+}
+.iframe-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Make the container full height of the viewport */
 }
 
 
+.content-container {
+  text-align: center; /* Center-align the content horizontally */
+  max-width: 768px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center-align the container horizontally */
+}
