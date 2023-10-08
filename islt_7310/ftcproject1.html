@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -8,8 +9,8 @@
     <title>Java Programming for FTC Robotics</title> 
 </head>
 <body>
-     <!-- Header Section -->
-     <header>
+    <!-- Header Section -->
+    <header>
         <div id="brand"><a href="index.html">Java Programming for FTC Robotics</a></div>
         <nav>
             <ul>
@@ -25,7 +26,7 @@
                     </ul>
                 </li>
                 <li id="reflection"><a href="reflection.html">Teaching Philosophy</a></li>
-                <li id="contact"><a href="con">Contact</a></li>
+                <li id="contact"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
@@ -45,38 +46,36 @@
                     </ul>
                 </li>
                 <li><a href="reflection.html">Teaching Philosophy</a></li>
-                <li><a href="contact.html">Contact</a></li>   
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>        
     </header>
 
     <main>
-        <div class="center-table">
-        <h1>Teleoperated Robot Control for FTC Competition: A Java Programming Journey</h1>
-        <br>
-     
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Fcjae58387k" frameborder="0" allowfullscreen></iframe>
-       
-        <br>
-        <br>
-        <table class="center-table">
-            <tr>
-                <th>Section</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>Introduction</td>
-                <td>In the world of competitive robotics, the FIRST Tech Challenge (FTC) is known for pushing the boundaries of innovation and engineering. One crucial aspect of FTC competitions is teleoperated robot control, where human operators take charge of a robot to complete various tasks on the field. In this project, we dive into the realm of teleoperated robot control, using Java and gamepad input to write code that enables precise control, strategic decision-making, and real-time responsiveness during an FTC competition.</td>
-            </tr>
-            <tr>
-                <td>Coding for Teleoperated Control</td>
-                <td>To achieve success in an FTC competition, teleoperated control code plays a pivotal role. Java, with its versatility and robust libraries, is a preferred choice for many FTC teams. Here is a snippet of Java code that demonstrates the basic structure for controlling a robot's movements using gamepad input:</td>
-            </tr>
-            <tr>
-                <td>Java Code</td>
-                <td>
-                    <pre>
-                        <code>
+        <div class="table">
+            <h1>Teleoperated Robot Control for FTC Competition: A Java Programming Journey</h1>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Fcjae58387k" frameborder="0" allowfullscreen></iframe>
+            <br>
+            <br>
+            <table class="table">
+                <tr>
+                    <th>Section</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Introduction</td>
+                    <td>In the world of competitive robotics, the FIRST Tech Challenge (FTC) is known for pushing the boundaries of innovation and engineering. One crucial aspect of FTC competitions is teleoperated robot control, where human operators take charge of a robot to complete various tasks on the field. In this project, we dive into the realm of teleoperated robot control, using Java and gamepad input to write code that enables precise control, strategic decision-making, and real-time responsiveness during an FTC competition.</td>
+                </tr>
+                <tr>
+                    <td>Coding for Teleoperated Control</td>
+                    <td>To achieve success in an FTC competition, teleoperated control code plays a pivotal role. Java, with its versatility and robust libraries, is a preferred choice for many FTC teams. Here is a snippet of Java code that demonstrates the basic structure for controlling a robot's movements using gamepad input:</td>
+                </tr>
+                <tr>
+                    <td>Java Code</td>
+                    <td>
+                        <pre>
+                            <code>
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.util.ElapsedTime;
@@ -116,29 +115,27 @@ public class TeleopMode extends LinearOpMode {
         }
     }
 }
-                        </code>
-                    </pre>
-                </td>
-            </tr>
-            <tr>
-                <td>Key Components of the Code</td>
-                <td>
-                    <ul>
-                        <li>Initialization: Initialize motors and other hardware components such as servos and sensors.</li>
-                        <li>Gamepad Input: Use gamepad1 to read input from the game controller's joysticks to control motor power.</li>
-                        <li>Motor Control: Set the power of the left and right drive motors based on gamepad input.</li>
-                        <li>Telemetry: Display real-time information on the driver station screen to assist with monitoring and debugging.</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Conclusion</td>
-                <td>In an FTC competition, teleoperated robot control is a critical aspect that demands precision, strategy, and quick decision-making. Java, combined with gamepad input, allows teams to create effective control systems for their robots. The code snippet provided above is just the beginning of what can be achieved in the quest for victory in FTC competitions. Teams can further enhance their code to manipulate game objects, interact with other robots, and adapt to evolving challenges on the field, all while striving for excellence in the world of competitive robotics.</td>
-            </tr>
-        </table>
-
-    </div>  
-    
+                            </code>
+                        </pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Key Components of the Code</td>
+                    <td>
+                        <ul>
+                            <li>Initialization: Initialize motors and other hardware components such as servos and sensors.</li>
+                            <li>Gamepad Input: Use gamepad1 to read input from the game controller's joysticks to control motor power.</li>
+                            <li>Motor Control: Set the power of the left and right drive motors based on gamepad input.</li>
+                            <li>Telemetry: Display real-time information on the driver station screen to assist with monitoring and debugging.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Conclusion</td>
+                    <td>In an FTC competition, teleoperated robot control is a critical aspect that demands precision, strategy, and quick decision-making. Java, combined with gamepad input, allows teams to create effective control systems for their robots. The code snippet provided above is just the beginning of what can be achieved in the quest for victory in FTC competitions. Teams can further enhance their code to manipulate game objects, interact with other robots, and adapt to evolving challenges on the field, all while striving for excellence in the world of competitive robotics.</td>
+                </tr>
+            </table>
+        </div>  
     </main>
 
     <!-- Footer Section -->
