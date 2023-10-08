@@ -1,24 +1,29 @@
+/* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
+/* Reset default styles */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Body styles */
 body {
-    background-color: #575555;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    flex-direction: column; 
-    min-height: 100vh; 
-  }
+  background-color: #575555;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
+/* Remove text decoration from header links */
 header a {
   text-decoration: none;
 }
 
+/* Header styles */
 header {
   padding: 0 20px;
   background-color: white;
@@ -27,29 +32,28 @@ header {
   justify-content: space-between;
 }
 
+/* Footer styles */
 footer {
   background-color: white;
   text-align: center;
-  padding: 10px; /* Reduce the padding for spacing */
+  padding: 10px;
   color: #E53935;
-  max-width: 90%; /* Set a maximum width for the footer */
-  margin: 0 auto; /* Center the footer horizontally */
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: auto;
 }
 
-
-footer {
-    margin-top: auto; /* Push the footer to the bottom */
-  }
-
+/* Footer image hover effect */
 footer img {
-    transition: transform 0.2s; /* Add a smooth transition effect */
-  }
-  
-  /* Scale up the images on hover */
-footer img:hover {
-    transform: scale(1.2); /* Adjust the scale factor as needed */
-  }
+  transition: transform 0.2s;
+}
 
+/* Scale up images on hover */
+footer img:hover {
+  transform: scale(1.2);
+}
+
+/* Brand styles */
 #brand {
   font-weight: bold;
   font-size: 18px;
@@ -61,91 +65,105 @@ footer img:hover {
   color: #E53935;
 }
 
+/* Grid container styles */
 .grid-container {
-    display: grid;
-    justify-content: center; 
-  }
-  
-  .centered-text {
-    font-weight: bold; 
-    text-align: center; 
-  }
-  
-  
-  .main-content p {
-    margin: 10px 0; 
-  }
-
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 20px; 
+  display: grid;
+  justify-content: center;
 }
 
+/* Centered text styles */
+.centered-text {
+  font-weight: bold;
+  text-align: center;
+}
 
+/* Main content paragraph styles */
+.main-content p {
+  margin: 10px 0;
+}
+
+/* Main styles */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+/* Left column styles */
 .left-column {
-    background-color: #575555;
-    padding: 20px;
-    color: white;
-    text-align: center;
+  background-color: #575555;
+  padding: 20px;
+  color: white;
+  text-align: center;
 }
 
-
+/* Generic column styles */
 .column {
-    text-align: center;
-    background-color: #575555;
-    padding: 20px;
-    color: white;
+  text-align: center;
+  background-color: #575555;
+  padding: 20px;
+  color: white;
 }
 
+/* Media query for screens up to 768px width */
 @media screen and (max-width: 768px) {
-    main {
-        display: block; /* Switch to one column */
-    }
+  main {
+    display: block;
+  }
 
-    .left-column,
-    .column {
-        grid-column: auto; /* Reset column layout */
-        text-align: center; /* Center align the content */
-        padding: 20px;
-        background-color: #575555;
-        color: white;
-    }
+  .left-column,
+  .column {
+    grid-column: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #575555;
+    color: white;
+  }
 }
 
+/* Larger text styles */
 .larger-text {
-    font-size: 28px; /* Adjust the font size as needed */
+  font-size: 28px;
 }
 
+/* FTC image styles */
 .ftc {
-    max-width: 100%; /* Make the image fit the container width */
-    height: auto; /* Maintain the image's aspect ratio */
-
+  max-width: 100%;
+  height: auto;
 }
 
+/* Larger header styles */
 .larger-header {
-    font-size: 24px; /* Adjust the font size as needed */
+  font-size: 24px;
 }
 
+/* Apply Roboto font to body */
 body {
   font-family: "Roboto", sans-serif;
 }
+
+/* Form styles */
 form {
   max-width: 400px;
   margin: 0 auto;
 }
+
 label {
   display: block;
   margin-bottom: 5px;
   text-align: left;
 }
-input[type="text"], input[type="email"], textarea {
+
+input[type="text"],
+input[type="email"],
+textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
 input[type="submit"] {
   background-color: #007bff;
   color: #fff;
@@ -155,38 +173,37 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/*This is the table section of my CSS*/
-
+/* Table styles */
 table {
   width: 100%;
   border-collapse: collapse;
   border: 5px solid white;
 }
 
-/* Style for the caption */
+/* Caption styles */
 caption {
   text-align: center;
   font-weight: bold;
   margin-bottom: 18px;
 }
 
-/* Style for header row */
+/* Header row styles */
 thead tr {
   background-color: #007bff;
 }
 
-/* Style for alternate rows */
+/* Alternate row styles */
 tbody tr:nth-child(odd) {
   background-color: #007bff;
 }
 
-/* Style for the last row */
+/* Last row styles */
 tbody tr:last-child,
 tfoot tr {
   background-color: #fa0a0a;
 }
 
-/* Style for table cells */
+/* Table cell styles */
 th, td {
   padding: 8px;
   border: 5px solid #ddd;
@@ -196,58 +213,66 @@ th, td {
 /* Media query for responsiveness */
 @media (max-width: 768px) {
   table {
-      font-size: 14px;
+    font-size: 14px;
   }
   th, td {
-      padding: 6px;
+    padding: 6px;
   }
   caption {
-      font-size: 16px;
+    font-size: 16px;
   }
 }
 
-/* Project Pages*/
-
+/* Project Pages container styles */
 .container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
 }
 
+/* Project Pages column styles */
 .column {
-    flex: 0.45;
-    margin: 10px;
+  flex: 0.45;
+  margin: 5px;
 }
 
 /* Styles for single-column layout on mobile view */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
+  .container {
+    flex-direction: column;
+    align-items: center; /* Center-align items horizontally */
+    text-align: center; /* Center-align text horizontally */
+  }
 
-    .column {
-        flex: 1;
-        margin: 10px 0;
-    }
+  .column {
+    flex: 1;
+    margin: 10px 0;
+  }
 }
+
+/* Center the table horizontally */
 .center-table {
-  margin: 0 auto; /* This centers the table horizontally */
-  max-width: 800px; /* Adjust the maximum width as needed */
-  width: 100%; /* Ensure the table takes full width on smaller screens */
-  padding-right: 0; /* Remove right padding */
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  padding-right: 0;
 }
 
+/* Center the iframe container vertically and horizontally */
 .iframe-container {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 100vh; /* Make the container full height of the viewport */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-
+/* Center-align the content container */
 .content-container {
-  text-align: center; /* Center-align the content horizontally */
-  max-width: 768px; /* Adjust the maximum width as needed */
-  margin: 0 auto; /* Center-align the container horizontally */
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: auto;
 }
-
+.centered-text {
+  text-align: center;
+}
