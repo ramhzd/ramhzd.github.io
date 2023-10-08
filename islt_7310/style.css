@@ -128,7 +128,7 @@ footer img:hover {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 form {
   max-width: 400px;
@@ -234,7 +234,9 @@ th, td {
   margin: 0 auto; /* This centers the table horizontally */
   max-width: 800px; /* Adjust the maximum width as needed */
   width: 100%; /* Ensure the table takes full width on smaller screens */
+  padding-right: 0; /* Remove right padding */
 }
+
 .iframe-container {
   display: flex;
   justify-content: center; /* Center horizontally */
@@ -248,3 +250,4 @@ th, td {
   max-width: 768px; /* Adjust the maximum width as needed */
   margin: 0 auto; /* Center-align the container horizontally */
 }
+
